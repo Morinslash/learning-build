@@ -10,8 +10,9 @@
       "name": "default",
       "hidden": true,
       "generator": "Unix Makefiles",
-      "binaryDir": "${sourceDir}/build",
+      "binaryDir": "${sourceDir}/build/${presetName}",
       "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
         "CMAKE_BUILD_TYPE": "Release"
       }
     },
