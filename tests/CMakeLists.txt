@@ -9,6 +9,8 @@ target_include_directories(todo_tests PRIVATE ${PROJECT_SOURCE_DIR}/libs)
 # Link against the library (todo_lib) and GoogleTest
 target_link_libraries(todo_tests PRIVATE todo_lib GTest::gtest_main)
 
+target_compile_options(todo_tests PRIVATE -Wall -Wextra -Wpedantic)
 # Enable testing and register this test with CTest
 enable_testing()
 add_test(NAME SimpleTest COMMAND todo_tests)
+
