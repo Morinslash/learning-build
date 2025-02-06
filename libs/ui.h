@@ -4,6 +4,6 @@
 #include "todo.h"
 
 // Function to start the application
-void runApplication(TodoManager& todoManager);
+void runApplication(TodoManager &todoManager);
 
 #endif // UI_H
